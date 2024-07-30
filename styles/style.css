@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* 01-heade
+   02-hero
+   03-serviços
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,13 +18,27 @@
     --cor-texto-nav: #fff;
     --cor-texto-escuro: #000;
 
+    
+  --cor-titulo: #000;
+  --cor-texto: #707070;
+  --cor-fundo: #3d3838;
+  --cor-card: #fff;
+  --cor-circulo: #fff;
+  --cor-borda: #000;
+  --cor-botao: #000;
+  --cor-houver-botao:#707070;
+  --cor-setas: #000;
+  --cor-botao-inferior: #000;
 }
 
 body {
+    min-height: 100vh;
+  
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: var(--cor-texto-escuro);
 }
+/*======================= 01-header =======================*/
 
 .container {
     max-width: 100%;
@@ -70,7 +92,7 @@ header nav ul li a:hover {
     
 }
   } 
-/* Hero */
+/*======================= 02-hero =======================*/
 
 .hero {
     background: var(--cor-bg-hero);
@@ -78,7 +100,7 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-.hero .container {
+.container .hero {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,13 +108,13 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.hero .hero-text {
+.container .hero-text {
     flex: 1;
     max-width: 500px;
     margin-right: 1em;
 }
 
-.hero .hero-image {
+.container .hero-image {
     flex: 1;
     max-width: 100%;
     height: auto;
@@ -170,7 +192,47 @@ header nav ul li a:hover {
         font-size: 0.9em;
     }   
 }
-/*
+
+/*======================= 03-serviços =======================*/
+
+.container-servicos {
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+.title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+@media screen {
+    .title {
+        font-size: 2em;
+        color: var(--cor-texto-escuro);
+    }
+    
+}
+.content-sevico{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria quatro colunas de largura igual */
+    gap: 1rem; /* Espaçamento entre as colunas */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+
+/* Contêiner do slide */
+.slide-container {
+    max-width: 1120px; 
+    width: 100%;  
+    padding: 40px 0; 
+  }
+  
+  /* Conteúdo do slide */
+
+
 footer {
     background: var(--cor-footer);
     color: var(--cor-texto-nav);
@@ -178,6 +240,7 @@ footer {
     padding: 1em 0;
     margin-top: 2em;
 }
-    cor-footerscreen;
 
-*/
+
+
+

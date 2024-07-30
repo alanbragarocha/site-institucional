@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa Exemplo</title>
     <link rel="stylesheet" href="./styles/style.css">
+  
 </head>
 <body>
-    <header>
         <h1 class="logo">Empresa Exemplo</h1>
            
         <div class="container">
             <nav>
                 <ul>
                     <li><a href="#">Início</a>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#serviocos">Serviços</a></li>
                     <li><a href="#">Portfólio</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
@@ -23,8 +23,8 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container">
+        <section id="sobre" class="container">
+            <div class="hero">
                 <div class="hero-text">
                     <h2>Bem-vindo à Empresa Exemplo</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
@@ -33,31 +33,36 @@
                 </div>
                 <div class="hero-image">
                     <img src="./assets/imagen/hero.webp" alt="Imagem de exemplo" class="hero-image">
-                </div>    
+                </div>    slide-container swiper
             </div>
 
         </section>
-
-        <section id="about">
-            <div class="container-about">
-                <div class="content-about">
-                         
-                    
-
+        <section id="serviocos" class="container-servicos">
+            <h2 class="title">Trabalhamos</h2>
+            <div class="content-sevico">
+                <div class="servico">
+                    <h2 class="title-servico">Serviço 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
                 </div>
-                
-            </div>
-            
-        </section>
-
+                <div class="servico">
+                    <h2 class="title-servico">Serviço 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
+                </div>
+                <div class="servico">
+                    <h2 class="title-servico">Serviço 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
+                </div>
+                <div class="servico">
+                    <h2 class="title-servico">Serviço 4</h2>/* Importação da fonte Google Fonts - Poppins */
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
+                </div>
     </main>
-    <!--footer
-    <footer>
+        <footer>
         <div class="container">
             <p>&copy; 2024 Empresa Exemplo. Todos os direitos reservados.</p>
             <p>Contato: contato@empresaexemplo.com.br</p>
         </div>
     </footer>
---> 
+
 </body>
 </html>
