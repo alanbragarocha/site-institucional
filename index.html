@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa Exemplo</title>
-    <link rel="stylesheet" href="./styles/style.css">
-  
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+
 </head>
+
 <body>
+    <header>
         <h1 class="logo">Empresa Exemplo</h1>
-           
-        <div class="container">
+
+        <div class="container-menu">
             <nav>
                 <ul>
                     <li><a href="#">Início</a>
@@ -27,13 +31,15 @@
             <div class="hero">
                 <div class="hero-text">
                     <h2>Bem-vindo à Empresa Exemplo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium
+                        voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores
+                        autem amet quo asperiores incidunt nesciunt, minima non.</p>
                     <button class="btn1">Entre em Contato</button>
-    
+
                 </div>
                 <div class="hero-image">
                     <img src="./assets/imagen/hero.webp" alt="Imagem de exemplo" class="hero-image">
-                </div>    slide-container swiper
+                </div>
             </div>
 
         </section>
@@ -42,27 +48,101 @@
             <div class="content-sevico">
                 <div class="servico">
                     <h2 class="title-servico">Serviço 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium
+                        voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores
+                        autem amet quo asperiores incidunt nesciunt, minima non.</p>
                 </div>
                 <div class="servico">
                     <h2 class="title-servico">Serviço 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium
+                        voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores
+                        autem amet quo asperiores incidunt nesciunt, minima non.</p>
                 </div>
                 <div class="servico">
                     <h2 class="title-servico">Serviço 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium
+                        voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores
+                        autem amet quo asperiores incidunt nesciunt, minima non.</p>
                 </div>
                 <div class="servico">
                     <h2 class="title-servico">Serviço 4</h2>/* Importação da fonte Google Fonts - Poppins */
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores autem amet quo asperiores incidunt nesciunt, minima non.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus praesentium
+                        voluptatum consequuntur quam, tenetur libero perferendis veniam quas molestiae adipisci dolores
+                        autem amet quo asperiores incidunt nesciunt, minima non.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Contêiner do slider -->
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <!-- Cada cartão individual no slider -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./images/goku1.webp" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Goku</h2>
+                            <p class="description">Texto de exemplo que contém um cabeçalho com funcionalidade aberta.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="button">Ver Mais</button>
+                        </div>
+                    </div>
+                    <!-- Repita o bloco acima para cada cartão adicional -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./images/Goku2.webp" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Goku</h2>
+                            <p class="description">Texto de exemplo que contém um cabeçalho com funcionalidade aberta.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="button">Ver Mais</button>
+                        </div>
+                    </div>
+                    <!-- Continue adicionando cartões conforme necessário -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./images/Goku3.webp" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Goku</h2>
+                            <p class="description">Texto de exemplo que contém um cabeçalho com funcionalidade aberta.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="button">Ver Mais</button>
+                        </div>
+                    </div>
+                    <!-- Adicione mais cartões aqui -->
+                </div>
+            </div>
+
+            <!-- Botões de navegação do Swiper -->
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
     </main>
-        <footer>
+    <footer>
         <div class="container">
             <p>&copy; 2024 Empresa Exemplo. Todos os direitos reservados.</p>
             <p>Contato: contato@empresaexemplo.com.br</p>
         </div>
-    </footer>
 
+    </footer>
+    <Script src="./assets/scripts/swiper-bundle.min.js"></Script>
+    <script src="./assets/scripts/script.js"></script>
 </body>
+
 </html>
