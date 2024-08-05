@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*======================= Variáveis Globais =======================*/
+:root {
+  --cor-nav: #333;
+  --cor-footer: #333;
+  --cor-texto-nav: #fff;
+  --cor-texto-escuro: #000;
+  --font-texto: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-texto), Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--cor-texto-escuro);
+}
+
+/*======================= 01-Header =======================*/
+.container-menu {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 100%;
+  background: var(--cor-nav);
+  color: var(--cor-texto-nav);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 1.25rem;
+}
+
+header nav ul li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cor-texto-nav);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  header nav ul {
+    margin-top: 1rem;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
+/* Define estilos para a seção "Sobre" */
+.minha-foto img {
+  text-decoration: none;
+  width: 25%;
+  float: left;
+  padding: 1rem;
+  margin: 0;
+  margin-bottom: 0;
+  border-radius: 20px;      
+}
+
+.container-sobre {
+  float: right;
+  display: flex;
+  padding: 1rem;
+  text-align: justify;
+
+}
+@media screen and (max-width: 1024px) {
+  .minha-foto img {
+      width: 100%;
+      float: none;
+  }
+  .texto p {
+    padding: 1rem;
+    margin-bottom: 1rem;
+   
+  }
+  .container-sobre {
+      flex-direction: column;
+  }
+  
+}
+.texto  {
+  font-family: var(--font-texto), Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  margin-left: 10px; /* Ajuste o valor conforme necessário para separar o texto da imagem */
+}
+
+.sobre, .titulo  {
+  font-family: var(--font-texto);
+  font-weight: 700;
+  padding: 2rem;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .texto {
+      padding: 1rem;
+  }
+  .titulo {
+      padding: 1rem;
+  }
+  
+}  
+
+/*======================= Footer =======================*/
+footer {
+  background: var(--cor-footer);
+  color: var(--cor-texto-nav);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
